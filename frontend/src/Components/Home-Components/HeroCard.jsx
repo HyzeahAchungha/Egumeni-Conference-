@@ -26,7 +26,7 @@ export default function HeroCard() {
             Egumeni: EAGER Knowledge Hub
           </h1>
 
-          <p className="text-base sm:text-lg opacity-95">You are not logged in yet</p>
+          <p className="text-base sm:text-lg opacity-95">1–2 Oct 2025 • Addis Ababa — Coordination & peer learning.</p>
 
           <div className="mt-2 flex w-full max-w-[560px] flex-col gap-3 sm:mt-1 sm:w-auto sm:max-w-none sm:flex-row sm:gap-3 sm:justify-start">
             <button
