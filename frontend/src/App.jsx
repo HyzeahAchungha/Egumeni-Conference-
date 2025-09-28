@@ -19,10 +19,10 @@ function App() {
 
         <Routes>
           {/* redirect root to /register */}
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Navigate to="/register" replace />} />
           <Route path="/register" element={<RegistrationForm />} />
           <Route path="/login" element={<LoginForm />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/contact-form" element={<ContactForm />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/community" element={<Community />} />
