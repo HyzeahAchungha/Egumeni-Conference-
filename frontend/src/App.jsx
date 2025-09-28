@@ -6,7 +6,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import ContactForm from "./Pages/Contact-Us/ContactForm";
 import AboutUs from "./Pages/About-Us/AboutUs";
-import Community from './Pages/Community/community';
+import Community from './Pages/Community/Communities';
 import Partners from './Pages/Partners/partners';
 import Explore from './Pages/Explore/Explore';
 
