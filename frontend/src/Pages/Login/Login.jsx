@@ -42,7 +42,7 @@ export default function Login() {
     setServerError("");
     try {
       await postJson("/api/auth/login", { identifier, password });
-      navigate("/home", { replace: true });
+      navigate("/", { replace: true });
     } catch (err) {
       setServerError(err.message || "Login failed");
     } finally {

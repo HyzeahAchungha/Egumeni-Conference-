@@ -143,7 +143,7 @@ const navigate = useNavigate();
     try {
       const data = await postJson("/api/auth/signup", payload);
       alert("Registered successfully!");
-     navigate("/home", { replace: true }); // go home on success
+     navigate("/", { replace: true }); // go home on success
     } catch (err) {
       setServerError(err.message || "Registration failed");
       setServerFieldErrors(err.fieldErrors || {});

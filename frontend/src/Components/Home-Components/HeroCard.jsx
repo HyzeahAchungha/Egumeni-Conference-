@@ -56,7 +56,7 @@
 
 import React from "react";
 import hands from "../../assets/holding-hands-table.jpg";
-
+import {  Link } from "react-router-dom";
 export default function HeroCard() {
   return (
     <div className="mx-auto max-w-[1200px] mt-5 rounded-[10px] shadow-sm border border-black/10 bg-white p-5 sm:p-6">
@@ -82,13 +82,15 @@ export default function HeroCard() {
           {/* Buttons: full-width on mobile (same width), auto on sm+ */}
           <div className="mt-2 flex w-full max-w-[360px] flex-col gap-3 sm:mt-1 sm:w-auto sm:max-w-none sm:flex-row sm:gap-3 sm:justify-start">
             <button
-              className="
+              
+            >
+              <Link to="/login" className="
                 w-full sm:w-auto
                 rounded-md bg-[#1f6fb2] hover:bg-[#1b5f98]
                 text-white text-[16px] px-6 py-3 shadow
-              "
-            >
-              Log in
+              ">
+                                                   Log in
+                  </Link>
             </button>
 
             <button
