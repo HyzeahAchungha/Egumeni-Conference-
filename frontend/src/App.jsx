@@ -1,5 +1,5 @@
 import React from 'react';  
-import './App.css'
+
  import RegistrationForm from './Pages/Register/Register'
 import LoginForm from './Pages/Login/Login'
 import {  Routes, Route,Navigate } from "react-router-dom";

@@ -13,8 +13,8 @@ export default function Footer() {
                     </div>
                     {/* Increased text size */}
                     <div className="text-sm text-gray-700 leading-6">
-                        <p>© 2021 UN Women. All rights reserved.</p>
-                        <p>Produced by the UN Trust Fund to End Violence against Women</p>
+                        <p>©2025 African Union Commission (WGYD, HHSD) & AU CIEFFA. All rights reserved.</p>
+                        <p>In partnership with the World Bank under the EAGER Programme.</p>
                     </div>
                 </div>
             </div>

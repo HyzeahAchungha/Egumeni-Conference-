@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import EagerLogo from "../../assets/eager-logo.png"
 
 export default function Navbar() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -17,12 +18,14 @@ export default function Navbar() {
       <div className="sticky top-0 z-50 bg-[#f5f5f5] border-b border-black/10">
         <div className="mx-auto max-w-[1200px] px-4 h-14 flex items-center gap-3">
           {/* Left: Logo */}
-          <Link
-            to="/"
-            className="flex items-center font-extrabold text-[24px] sm:text-[28px] tracking-tight text-[#ff7c3b] leading-none"
-          >
-            SHINE
-          </Link>
+         <Link to="/" className="flex items-center gap-2" aria-label="EAGER Home">
+  <img
+    src={EagerLogo}
+    alt="EAGER — East Africa Girls’ Empowerment and Resilience"
+    className="h-8 sm:h-9 md:h-10 w-auto object-contain -my-1"
+  />
+</Link>
+
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-4 text-[14px] text-gray-800">

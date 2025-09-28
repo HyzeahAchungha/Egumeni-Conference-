@@ -23,8 +23,8 @@ export default function EngagePanel() {
         <div className="absolute inset-0 flex items-end">
           <div className="p-6 pb-10 text-white">
             <h3 className="text-3xl font-extrabold tracking-wide">ENGAGE</h3>
-            <button className="mt-3 rounded-md bg-[#245da8] hover:bg-[#1d4e8f] text-white text-md px-3 py-1.5 shadow">
-              Visit our Communities | Themes pages
+            <button className="mt-3 rounded-md bg-[#F39A22] hover:bg-[#F39A22] text-white text-md px-3 py-1.5 shadow">
+              Explore Themes: Policy • Data Systems • Institutional Capacity
             </button>
           </div>
         </div>

@@ -8,25 +8,38 @@ export default function PartnersPanel() {
                     <div className="text-2xl font-extrabold">MEET OUR PARTNERS</div>
                 </div>
                 <div className="text-[15px] leading-6 flex flex-col justify-between">
-                    <div>
-                        <div className="flex items-start gap-4">
-                            <div className="mt-1 text-3xl">⬅️</div>
-                            <div>
-                                <p><span className="underline">VISIT!</span></p>
-                                <p className="mt-2">
-                                    <a className="text-[#1a56db] underline">Spotlight Initiative</a> and <a className="text-[#1a56db] underline">ACT</a> are the first partners to launch their own pages on SHINE hub. Don’t miss out the opportunity to learn more about them and to check their curated content and resources.
-                                </p>
-                                <ul className="list-disc pl-5 mt-2 space-y-1">
-                                    <li>
-                                        <a className="text-[#1a56db] underline">Follow Spotlight initiative page here!</a>
-                                    </li>
-                                    <li>
-                                        <a className="text-[#1a56db] underline">Follow ACT page here!</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <div className="self-start text-left">
+  <div className="flex items-start gap-4">
+    <div className="mt-1 text-3xl">⬅️</div>
+
+    <div className="max-w-[720px]">
+      <p>
+        <span className="underline">VISIT!</span>
+      </p>
+
+      <p className="mt-2">
+        The Egumeni is convened by the African Union (WGYD, HHSD, AU CIEFFA) with the World Bank and 
+  EAGER country teams (Madagascar, Mozambique) to strengthen regional coordination on GEWE and 
+  gender-responsive education.
+      </p>
+
+      <ul className="list-disc pl-5 mt-2 space-y-1">
+        <li>
+          <a className="text-[#1a56db] underline">
+            About the Egumeni (Community of Practice)
+          </a>
+        </li>
+        <li>
+          <a className="text-[#1a56db] underline">AUC partners: WGYD • HHSD • AU CIEFFA!</a>
+        </li>
+        <li>
+          <a className="text-[#1a56db] underline">EAGER countries: Madagascar • Mozambique</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
                     <div className="mt-4 flex justify-end">
                         <a href="" className=" text-[#1a56db] underline font-semibold px-5 py-2 rounded-md shadow">
                             SIGN UP FOR MORE HERE!

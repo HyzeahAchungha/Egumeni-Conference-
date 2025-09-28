@@ -54,7 +54,7 @@ export default function Login() {
     <>
      <Navbar />
    
-    <div className="min-h-screen bg-gray text-left">
+    <div className="min-h-screen bg-gray text-left px-12">
       <h2 className="text-2xl font-semibold mb-6  mt-6">Log in</h2>
 
    
@@ -117,7 +117,7 @@ export default function Login() {
                 type="submit"
                 disabled={loading}
                 className="rounded-lg bg-blue-700 text-white px-5 py-2.5 font-semibold shadow hover:bg-blue-800 disabled:opacity-60"
-                style={{ backgroundColor: '#1D4ED8', color: '#fff' }}
+                style={{ backgroundColor: '#F39A22', color: '#fff' }}
               >
                 {loading ? "Logging in..." : "Log in"}
               </button>

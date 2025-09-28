@@ -170,7 +170,7 @@ function ContactForm() {
             <button
               type="submit"
               disabled={status.loading}
-              className="bg-[#0056b3] hover:bg-[#004494] disabled:opacity-60 text-white px-5 py-2 rounded-md text-sm font-medium transition"
+              className="bg-[#F39A22] hover:bg-[#F39A22] disabled:opacity-60 text-white px-5 py-2 rounded-md text-sm font-medium transition"
               aria-busy={status.loading}
             >
               {status.loading ? "Sending..." : "Submit"}

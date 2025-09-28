@@ -155,7 +155,7 @@ const navigate = useNavigate();
   return (
     <>
     <Navbar/>
-    <div className="min-h-screen bg-gray-50 py-10">
+    <div className="min-h-screen bg-gray-50 py-10 px-8">
       <div className="px-4 text-left">
         <h2 className="text-2xl font-semibold mb-6 mt-6">Create new account</h2>
 
@@ -383,7 +383,7 @@ const navigate = useNavigate();
                     type="submit"
                     disabled={!agree || loading}
                     className="rounded-lg bg-blue-700 text-white px-5 py-3 font-medium shadow hover:bg-blue-800 disabled:opacity-60"
-                    style={{ backgroundColor: '#1D4ED8', color: '#fff' }}
+                    style={{ backgroundColor: '#F39A22  ', color: '#fff' }}
                   >
                     {loading ? "Creating..." : "Create new account"}
                   </button>
