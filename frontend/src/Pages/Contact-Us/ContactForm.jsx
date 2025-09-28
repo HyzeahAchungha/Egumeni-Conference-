@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import Navbar from "../../Components/Navbar/navbar";
 import Footer from "../../Components/Footer/Footer";
+import emailjs from "@emailjs/browser";
+
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -12,18 +17,56 @@ function ContactForm() {
     spotlight: false,
   });
 
+  const [status, setStatus] = useState({ loading: false, msg: "", ok: null });
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prev) => ({
+      ...prev,
       [name]: type === "checkbox" ? checked : value,
-    });
+    }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you! Your form has been submitted.");
+
+    // basic validation
+    if (!formData.email || !formData.reason) {
+      setStatus({ loading: false, ok: false, msg: "Email and reason are required." });
+      return;
+    }
+
+    setStatus({ loading: true, msg: "", ok: null });
+
+    // Map your state to EmailJS template variables
+    const templateParams = {
+      first_name: formData.firstName,
+      last_name: formData.lastName,
+      reply_to: formData.email,     // commonly used by EmailJS
+      reason: formData.reason,
+      un_trust_fund: formData.unTrustFund ? "Yes" : "No",
+      spotlight: formData.spotlight ? "Yes" : "No",
+      submitted_at: new Date().toISOString(),
+    };
+
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, {
+        publicKey: PUBLIC_KEY,
+      });
+
+      setStatus({ loading: false, ok: true, msg: "Thanks! Your message has been sent." });
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        reason: "",
+        unTrustFund: false,
+        spotlight: false,
+      });
+    } catch (err) {
+      console.error(err);
+      setStatus({ loading: false, ok: false, msg: "Could not send message. Please try again." });
+    }
   };
 
   return (
@@ -34,13 +77,10 @@ function ContactForm() {
         <div className="max-w-2xl px-6 py-10 bg-white shadow-sm rounded-md ml-12">
           <h2 className="text-2xl font-semibold mb-6">Contact Us</h2>
 
-          <form onSubmit={handleSubmit} className="space-y-5">
+          <form onSubmit={handleSubmit} className="space-y-5" noValidate>
             {/* First Name */}
             <div>
-              <label
-                htmlFor="firstName"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
+              <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
                 First name
               </label>
               <input
@@ -56,10 +96,7 @@ function ContactForm() {
 
             {/* Last Name */}
             <div>
-              <label
-                htmlFor="lastName"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
+              <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
                 Last name
               </label>
               <input
@@ -74,10 +111,7 @@ function ContactForm() {
 
             {/* Email */}
             <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                 Email address <span className="text-red-500">*</span>
               </label>
               <input
@@ -93,12 +127,8 @@ function ContactForm() {
 
             {/* Reason */}
             <div>
-              <label
-                htmlFor="reason"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
-                Tell us the reason why you would like to contact us{" "}
-                <span className="text-red-500">*</span>
+              <label htmlFor="reason" className="block text-sm font-medium text-gray-700 mb-1">
+                Tell us the reason why you would like to contact us <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
@@ -121,8 +151,7 @@ function ContactForm() {
                   onChange={handleChange}
                   className="mr-2 mt-1"
                 />
-                Select if your organization is supported by the UN Trust Fund to
-                End Violence against Women.
+                Select if your organization is supported by the UN Trust Fund to End Violence against Women.
               </label>
 
               <label className="flex items-start text-sm text-gray-700">
@@ -133,18 +162,25 @@ function ContactForm() {
                   onChange={handleChange}
                   className="mr-2 mt-1"
                 />
-                Select if your organization supported by the Spotlight
-                Initiative.
+                Select if your organization is supported by the Spotlight Initiative.
               </label>
             </div>
 
             {/* Submit */}
             <button
               type="submit"
-              className="bg-[#0056b3] hover:bg-[#004494] text-white px-5 py-2 rounded-md text-sm font-medium transition"
+              disabled={status.loading}
+              className="bg-[#0056b3] hover:bg-[#004494] disabled:opacity-60 text-white px-5 py-2 rounded-md text-sm font-medium transition"
+              aria-busy={status.loading}
             >
-              Submit
+              {status.loading ? "Sending..." : "Submit"}
             </button>
+
+            {status.msg && (
+              <p className={`text-sm mt-2 ${status.ok ? "text-green-600" : "text-red-600"}`}>
+                {status.msg}
+              </p>
+            )}
           </form>
         </div>
       </main>
