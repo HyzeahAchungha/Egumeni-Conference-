@@ -60,7 +60,7 @@ export default function Navbar() {
 
           {/* Right: Auth + mobile search/hamburger */}
           <div className="ml-auto hidden md:flex items-center gap-4 text-[14px]">
-            <Link to="/signup" className="hover:underline">
+            <Link to="/register" className="hover:underline">
               Sign up
             </Link>
             <Link to="/login" className="hover:underline">
