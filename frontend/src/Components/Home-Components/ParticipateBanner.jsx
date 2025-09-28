@@ -11,8 +11,8 @@ export default function ParticipateBanner() {
                     </p>
 
                     <div className="mt-3 flex flex-wrap gap-3">
-                        <button className="rounded-md bg-[#1f6fb2] hover:bg-[#1b5f98] text-white text-sm px-3 py-1.5 shadow">Share your thoughts here!</button>
-                        <button className="rounded-md bg-[#1f6fb2] hover:bg-[#1b5f98] text-white text-sm px-3 py-1.5 shadow">Share your thoughts here!</button>
+                        <button className="rounded-md bg-[#1f6fb2] hover:bg-[#1b5f98] text-white text-md px-3 py-1.5 shadow">Share your thoughts here!</button>
+                    
                     </div>
 
                 </div>
@@ -20,3 +20,4 @@ export default function ParticipateBanner() {
         </div>
     );
 }
+    
