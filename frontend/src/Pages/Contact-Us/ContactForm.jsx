@@ -151,7 +151,7 @@ function ContactForm() {
                   onChange={handleChange}
                   className="mr-2 mt-1"
                 />
-                Select if your organization is supported by the UN Trust Fund to End Violence against Women.
+               Select if your organization is supported by the AU to End Violence against Women
               </label>
 
               <label className="flex items-start text-sm text-gray-700">
@@ -162,7 +162,7 @@ function ContactForm() {
                   onChange={handleChange}
                   className="mr-2 mt-1"
                 />
-                Select if your organization is supported by the Spotlight Initiative.
+                Select if your organization is supported by the World Bank Initiative.
               </label>
             </div>
 

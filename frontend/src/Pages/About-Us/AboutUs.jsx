@@ -36,7 +36,7 @@ export default function AboutUs() {
           <div className="h-[6px] bg-[#c9a9a1]" />
           <div className="h-[6px] bg-white" />
 
-          
+
         </section>
 
         {/* Share row (right aligned) */}
@@ -68,44 +68,18 @@ export default function AboutUs() {
         <main className="mt-5 rounded-xl border border-black/10 bg-white p-6 shadow-sm sm:p-7">
           <div className="prose prose-sm max-w-none text-[15px] leading-7 prose-a:text-[#1a56db] prose-a:no-underline hover:prose-a:underline">
             <p className="mb-4">
-             Egumeni Hub is convened by the African Union, with support from the World Bank through the EAGER programme, to strengthen regional coordination and dialogue among governments, civil society, development partners, practitioners, 
-             and researchers working to advance gender-responsive education and women’s empowerment across Africa.
+              Egumeni Hub is convened by the African Union, with support from the World Bank through the EAGER programme, to strengthen regional coordination and dialogue among governments, civil society, development partners, practitioners,
+              and researchers working to advance gender-responsive education and women’s empowerment across Africa.
             </p>
 
             <p className="mb-4">
-              The UN Trust Fund to End Violence against Women is a grant-making
-              mechanism managed by UN Women on behalf of the UN system. Since
-              its establishment in 1996 by UN General Assembly resolution 50/166,
-              the UN Trust Fund has awarded USD 198 million to 609 initiatives
-              in 140 countries and territories. Focused on preventing violence,
-              implementing laws and policies, and improving access to vital
-              services for survivors, the UN Trust Fund invests in sustainable
-              change through demand-driven initiatives implemented by CSOs
-              around the world. The UN Trust Fund is committed to advocating
-              for adequate, sustainable funding for efforts to end violence
-              against women and girls including investment in the practice-based
-              knowledge of CSOs to inform global efforts to end violence against
-              women.
+              EAGER (East Africa Girls’ Empowerment and Resilience) is a World Bank–supported regional programme that advances girls’ and young women’s education and economic empowerment across East Africa. Phase one is implemented by the Republic of Madagascar and the Republic of Mozambique, with the African Union Commission—through the Women, Gender and Youth Directorate (WGYD) in collaboration with the Health, Humanitarian and Social Affairs Directorate (HHSD) and AU CIEFFA—providing regional coordination. The programme aligns with Agenda 2063, Aspiration 6 and the Second Ten-Year Implementation Plan (Moonshot 6) to ensure development that is people-driven, especially by women and youth.
+
+              To optimise design and implementation, EAGER is operationalising the Egumeni Knowledge Platform—a regional Community of Practice (CoP) named from the Siswati word for “a gathering space.” Egumeni convenes programme implementers and partners working on gender-responsive education and GEWE to connect, exchange evidence and lessons, and strengthen institutional capacity across countries.
             </p>
 
             <p>
-              The global Spotlight Initiative to eliminate violence against
-              women and girls is a United Nations initiative in partnership with
-              the European Union and other partners. Designed as a model of
-              coordination, comprehensive programme delivery and
-              multi-stakeholder ownership, the Initiative is delivering results
-              on one of the most egregious human rights and security challenges
-              globally through comprehensive responses and a focus on
-              prevention, sustainability, and transformative impact at all
-              levels. With a strategic vision to uproot the drivers of violence,
-              this initiative has presented an opportunity to disrupt the status
-              quo and engage women and girls in designing their own futures free
-              of violence. Implementation of the Spotlight Initiative in over 25
-              countries across 5 regions with a multiplicity of partners—from
-              grassroots communities to governments at the highest levels—has
-              generated a wealth of knowledge, lessons and good practices that
-              are well positioned to be modelled widely and to drive global
-              advocacy.
+              The Egumeni & Coordination Meeting (1–2 Oct 2025, Addis Ababa, Ethiopia) will align partners on roles, governance and working modalities; validate the 2025 roadmap and workplan; and agree on communication, monitoring and coordination structures. Expected outcomes include a final Egumeni Framework, thematic outputs on policy, data systems and institutional capacity, as well as strengthened partnerships among AUC departments, the World Bank and EAGER country actors.
             </p>
           </div>
         </main>

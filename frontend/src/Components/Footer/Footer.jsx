@@ -1,5 +1,6 @@
 import React from "react";
-import UNlogo from "../../assets/UN-Women.png"
+import AU from "../../assets/AU.png"
+import WorldBank from "../../assets/Worldbank.svg"
 
 export default function Footer() {
     return (
@@ -7,9 +8,10 @@ export default function Footer() {
             <div className="mx-auto max-w-[1200px] px-4">
                 {/* Increased height */}
                 <div className="py-12 grid md:grid-cols-2 gap-6 items-center">
-                    <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-4">
                         {/* Increased logo size */}
-                        <img src={UNlogo} alt="Partner 1" className="h-14 w-auto bg-white rounded" />
+                        <img src={AU} alt="Partner 1" className="h-14 w-auto bg-white rounded" />
+                         <img src={WorldBank} alt="Partner 1" className="h-14 w-auto bg-white rounded" />
                     </div>
                     {/* Increased text size */}
                     <div className="text-sm text-gray-700 leading-6">
