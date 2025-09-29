@@ -18,6 +18,13 @@ const resources = {
         language: "Language",
         selectYourLanguage: "Select your language",
       },
+      footer: {
+        rights1:
+          "©{{year}} African Union Commission (WGYD, HHSD) & AU CIEFFA. All rights reserved.",
+        rights2:
+          "In partnership with the World Bank under the EAGER Programme.",
+        alt: { au: "African Union", worldBank: "World Bank" },
+      },
       downloadPanel: {
         title: "DOWNLOAD",
         desc: "Key documents for the 1–2 Oct 2025 Egumeni & Coordination Meeting",
@@ -210,6 +217,13 @@ const resources = {
         login: "Se connecter",
         language: "Langue",
         selectYourLanguage: "Choisissez votre langue",
+      },
+      footer: {
+        rights1:
+          "©{{year}} Commission de l’Union africaine (WGYD, HHSD) & AU CIEFFA. Tous droits réservés.",
+        rights2:
+          "En partenariat avec la Banque mondiale dans le cadre du programme EAGER.",
+        alt: { au: "Union africaine", worldBank: "Banque mondiale" },
       },
       downloadPanel: {
         title: "TÉLÉCHARGER",
@@ -406,6 +420,12 @@ const resources = {
         language: "اللغة",
         selectYourLanguage: "اختر لغتك",
       },
+      footer: {
+        rights1:
+          "©{{year}} مفوضية الاتحاد الأفريقي (WGYD, HHSD) وAU CIEFFA. جميع الحقوق محفوظة.",
+        rights2: "بالشراكة مع مجموعة البنك الدولي ضمن برنامج EAGER.",
+        alt: { au: "الاتحاد الأفريقي", worldBank: "البنك الدولي" },
+      },
       downloadPanel: {
         title: "التحميل",
         desc: "الوثائق الأساسية لاجتماع إيغوميني والتنسيق (1–2 أكتوبر 2025)",
@@ -594,6 +614,12 @@ const resources = {
         login: "Ingia",
         language: "Lugha",
         selectYourLanguage: "Chagua lugha yako",
+      },
+      footer: {
+        rights1:
+          "©{{year}} Tume ya Umoja wa Afrika (WGYD, HHSD) & AU CIEFFA. Haki zote zimehifadhiwa.",
+        rights2: "Kwa ushirikiano na Benki ya Dunia chini ya Mpango wa EAGER.",
+        alt: { au: "Umoja wa Afrika", worldBank: "Benki ya Dunia" },
       },
       downloadPanel: {
         title: "PAKUA",
