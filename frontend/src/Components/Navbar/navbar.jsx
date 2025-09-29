@@ -61,7 +61,7 @@ export default function Navbar() {
             </Link>
 
             {/* Search icon */}
-            <button
+            {/* <button
               onClick={openSearch}
               aria-label="Open search"
               className="ml-2 inline-flex h-8 w-8 items-center justify-center rounded-md hover:bg-black/5"
@@ -70,7 +70,7 @@ export default function Navbar() {
                 <circle cx="11" cy="11" r="7" />
                 <path d="M20 20l-3.5-3.5" />
               </svg>
-            </button>
+            </button> */}
 
             <span className="text-gray-300">|</span>
 
