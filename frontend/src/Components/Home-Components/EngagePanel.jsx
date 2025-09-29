@@ -1,5 +1,5 @@
 import React from "react";
-import Engage from "../../assets/engage.jpg";
+import Engage from "../../assets/ENGAGE.jpg";
 import { useTranslation } from "react-i18next";
 
 export default function EngagePanel() {
