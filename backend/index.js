@@ -11,10 +11,30 @@ const app = express();
 
 // security & parsing
 app.use(helmet());
-app.use(cors({ 
- origin: "http://localhost:5173", 
-  credentials: true,   
- }));
+const allowedOrigins = (process.env.CORS_ORIGIN || 'http://localhost:5173')
+  .split(',')
+  .map(s => s.trim());
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // allow Postman/curl (no origin)
+    if (!origin) return callback(null, true);
+
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    return callback(new Error('Not allowed by CORS'));
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
+
+// respond to preflight
+app.options(/.*/, cors({ origin: allowedOrigins, credentials: true }));
+// ---------------------------------
+
+
 app.use(express.json({ limit: '1mb' }));
 
 // rate limiting for auth
