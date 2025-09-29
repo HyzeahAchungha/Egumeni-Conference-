@@ -163,7 +163,7 @@ export default function Navbar() {
             <div className="my-3 h-px bg-black/10" />
 
             <div className="grid gap-2">
-              <Link onClick={() => setMobileOpen(false)} to="/signup" className="rounded-md border px-3 py-2 hover:bg-gray-50">
+              <Link onClick={() => setMobileOpen(false)} to="/register" className="rounded-md border px-3 py-2 hover:bg-gray-50">
                 {t("nav.signup")}
               </Link>
               <Link
