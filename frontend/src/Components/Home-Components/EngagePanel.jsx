@@ -1,5 +1,5 @@
 import React from "react";
-import Engage from "../../assets/engage.png";
+import Engage from "../../assets/engage.jpg";
 import { useTranslation } from "react-i18next";
 
 export default function EngagePanel() {
@@ -13,7 +13,7 @@ export default function EngagePanel() {
           alt="Mural with sunflowers"
           className="
             h-[230px] w-full object-cover
-            object-[50%_35%]   /* ↑ move view up; try 30–40% */
+            object-[50%_20%]   /* ↑ move view up; try 30–40% */
           "
         />
 

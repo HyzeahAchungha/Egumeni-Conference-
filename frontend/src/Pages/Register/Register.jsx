@@ -5,6 +5,8 @@ import { postJson } from "../lib/api";
 import { useNavigate, Link } from "react-router-dom";
 import { useTranslation, Trans } from "react-i18next";
 
+
+
 // ---- UI helpers ----
 const Label = ({ htmlFor, children }) => (
   <label
@@ -194,7 +196,7 @@ export default function RegistrationForm() {
                       placeholder={t("placeholders.email")}
                     />
                     <p className="mt-2 text-sm text-gray-600 max-w-md">
-                     {t("help.emailPrivacy")}
+                      {t("help.emailPrivacy")}
                     </p>
                     {touched.email && fieldErrors.email && (
                       <FieldError>
@@ -217,7 +219,7 @@ export default function RegistrationForm() {
                       placeholder={t("placeholders.username")}
                     />
                     <p className="mt-2 text-sm text-gray-600 max-w-md">
-                       {t("help.usernameChars")}
+                      {t("help.usernameChars")}
                     </p>
                     {serverFieldErrors.username && <FieldError>{serverFieldErrors.username.join(", ")}</FieldError>}
                   </div>
@@ -361,8 +363,10 @@ export default function RegistrationForm() {
                           onChange={(e) => setAgree(e.target.checked)}
                         />
                         <Trans i18nKey="register.agree">
-                            I agree with the <a className="text-blue-700 underline decoration-2 underline-offset-2" href="#">data policy</a><span className="text-red-600"> *</span>
-                          </Trans>
+                          I agree with the <Link to="/privacy-policy" className="text-blue-700 underline decoration-2 underline-offset-2">
+                            privacy policy
+                          </Link><span className="text-red-600"> *</span>
+                        </Trans>
                       </label>
                     </div>
 
@@ -371,7 +375,7 @@ export default function RegistrationForm() {
 
                       {t("register.haveAccount")}{" "}
                       <Link to="/login" className="font-semibold text-blue-700 underline-none">
-                         {t("login")}
+                        {t("login")}
                       </Link>
                     </div>
                   </div>
@@ -384,7 +388,7 @@ export default function RegistrationForm() {
                       className="rounded-lg bg-blue-700 text-white px-5 py-3 font-medium shadow hover:bg-blue-800 disabled:opacity-60"
                       style={{ backgroundColor: '#F39A22  ', color: '#fff' }}
                     >
-                         {loading ? t("register.creating") : t("register.submit")}
+                      {loading ? t("register.creating") : t("register.submit")}
                     </button>
                   </div>
                 </form>

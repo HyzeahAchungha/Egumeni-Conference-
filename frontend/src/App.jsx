@@ -9,6 +9,7 @@ import AboutUs from "./Pages/About-Us/AboutUs";
 import Communities from './Pages/Communities/Communities';
 import Partner from './Pages/Partner/Partner';
 import Explore from './Pages/Explore/Explore';
+import PrivacyPolicy from './Pages/Privacy-Policy/Policy';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/community" element={<Communities />} />
            <Route path="/Partner" element={<Partner />} /> 
            <Route path="/explore" element={<Explore />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
 
         </Routes>
 

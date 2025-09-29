@@ -1,5 +1,5 @@
 import React from "react";
-import women from "../../assets/women.png"
+import Read from "../../assets/read.jpg"
 import { useTranslation } from "react-i18next";
 export default function ReadPanel() {
      const { t } = useTranslation("common");
@@ -7,7 +7,7 @@ export default function ReadPanel() {
         <div className="mx-auto max-w-[1200px] mt-6">
             <div className="rounded-[10px] overflow-hidden shadow-sm border border-black/10 relative">
                 {/* Increased height */}
-                <img src={women} alt={t("readPanel.alt")} className="h-[260px] w-full object-cover" />
+                <img src={Read} alt={t("readPanel.alt")} className="h-[260px] w-full object-cover" />
                 <div className="absolute inset-0 bg-black/35" />
                 
                 {/* Text moved down with flexbox */}

@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import MeetImage from "../../assets/meet.png"
+import MeetImage from "../../assets/meet.jpg"
 
 export default function MeetPanels() {
     const { t } = useTranslation("common");
@@ -8,8 +8,13 @@ export default function MeetPanels() {
         <div className="mx-auto max-w-[1200px] mt-6">
             <div className="rounded-[10px] overflow-hidden shadow-sm border border-black/10 relative">
                 {/* Centralized image */}
-                <img src={MeetImage} alt={t("meet.alt")} className="h-[250px] w-full object-cover object-center" />
-                <div className="absolute inset-0 bg-black/35" />
+                <img
+  src={MeetImage}
+  alt={t("meet.alt")}
+  className="h-[250px] w-full object-cover object-[center_40%]"
+/>
+<div className="absolute inset-0 bg-black/35" />
+
                 
                 {/* Text moved down */}
                 <div className="absolute inset-0 p-6 text-white flex flex-col justify-end">
