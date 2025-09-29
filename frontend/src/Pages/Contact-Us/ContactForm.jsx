@@ -151,7 +151,7 @@ function ContactForm() {
                   onChange={handleChange}
                   className="mr-2 mt-1"
                 />
-               Select if your organization is supported by the AU to End Violence against Women
+             Select if your organization is an AUC (WGYD/HHSD/AU CIEFFA) partner in the EAGER programme.
               </label>
 
               <label className="flex items-start text-sm text-gray-700">
@@ -162,7 +162,7 @@ function ContactForm() {
                   onChange={handleChange}
                   className="mr-2 mt-1"
                 />
-                Select if your organization is supported by the World Bank Initiative.
+               Select if your organization is part of the World Bank–supported EAGER programme.
               </label>
             </div>
 
