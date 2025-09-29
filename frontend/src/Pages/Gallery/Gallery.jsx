@@ -19,29 +19,29 @@ import Workshop5 from "../../assets/Workshop/FK6A0007.jpg"
 
 // Your raw items can keep any labels; we'll normalize to just 2 categories.
 const IMAGES = [
-    { id: 1, src: Speaker1, alt: "Pl", caption: "Panel discussion", category: "Speakers" },
-    { id: 2, src: Speaker2, alt: "Breakout workshop", caption: "Breakout workshop", category: "Speakers" },
-    { id: 3, src: Speaker3, alt: "Community dialogue", caption: "Community dialogue", category: "Speakers" },
-    { id: 4, src: Speaker4, alt: "Panel discussion", caption: "Panel discussion", category: "Speakers" },
-    { id: 5, src: Speaker5, alt: "CoP networking", caption: "CoP networking", category: "Speakers" },
-    { id: 6, src: Speaker6, alt: "Team planning", caption: "Team planning", category: "Speakers" },
-    { id: 7, src: Speaker7, alt: "Team planning", caption: "Team planning", category: "Speakers" },
-    { id: 8, src: Speaker8, alt: "Team planning", caption: "Team planning", category: "Speakers" },
-    { id: 9, src: Workshop1, alt: "Team planning", caption: "Team planning", category: "Workshops" },
-    { id: 10, src: Workshop2, alt: "Team planning", caption: "Team planning", category: "Workshops" },
-    { id: 11, src: Workshop3, alt: "Team planning", caption: "Team planning", category: "Workshops" },
-    { id: 12, src: Workshop4, alt: "Team planning", caption: "Team planning", category: "Workshops" },
-    { id: 13, src: Workshop5, alt: "Team planning", caption: "Team planning", category: "Workshops" },
+    { id: 1, src: Speaker1, alt: "Panel discussion", caption: "Panel discussion", category: "Speaker" },
+    { id: 2, src: Speaker2, alt: "Panel discussion", caption: "Panel discussion", category: "Speaker" },
+    { id: 3, src: Speaker3, alt: "Panel discussion", caption: "Panel discussion", category: "Speaker" },
+    { id: 4, src: Speaker4, alt: "Panel discussion", caption: "Panel discussion", category: "Speaker" },
+    { id: 5, src: Speaker5, alt: "Panel discussion", caption: "Panel discussion", category: "Speaker" },
+    { id: 6, src: Speaker6, alt: "Panel discussion", caption: "Panel discussion", category: "Speaker" },
+    { id: 7, src: Speaker7, alt: "Panel discussion", caption: "Panel discussion", category: "Speaker" },
+    { id: 8, src: Speaker8, alt: "Panel discussion", caption: "Panel discussion", category: "Speaker" },
+    { id: 9, src: Workshop1, alt: "Community dialogue", caption: "Community dialogue", category: "Workshop" },
+    { id: 10, src: Workshop2, alt: "Community dialogue", caption: "Community dialogue", category: "Workshop" },
+    { id: 11, src: Workshop3, alt: "Community dialogue", caption: "Community dialogue", category: "Workshop" },
+    { id: 12, src: Workshop4, alt: "Community dialogue", caption: "Community dialogue", category: "Workshop" },
+    { id: 13, src: Workshop5, alt: "Community dialogue", caption: "Community dialogue", category: "Workshop" },
 ];
 
 
 // 🔽 Force only 2 categories
-const CATEGORIES = ["All", "Workshops", "Speakers"];
+const CATEGORIES = ["All", "Workshop", "Speaker"];
 
 // Normalize: if original category/caption includes "workshop", map to Workshops; else Speakers
 const normalizeCategory = (item) => {
     const text = `${item.category ?? ""} ${item.caption ?? ""}`.toLowerCase();
-    return text.includes("workshop") ? "Workshops" : "Speakers";
+    return text.includes("workshop") ? "Workshop" : "Speaker";
 };
 
 export default function Gallery() {
