@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { postJson } from "../lib/api";
 import Navbar from "../../Components/Navbar/navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const Label = ({ htmlFor, children }) => (
   <label
@@ -124,6 +125,7 @@ export default function Login() {
           </form>
         </div>
       </div>
+        <Footer />
     </div>
      </>
   );

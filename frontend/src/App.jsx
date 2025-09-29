@@ -29,7 +29,6 @@ function App() {
            <Route path="/Partner" element={<Partner />} /> 
            <Route path="/explore" element={<Explore />} />
 
-
         </Routes>
 
 

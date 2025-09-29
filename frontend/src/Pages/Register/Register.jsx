@@ -1,4 +1,5 @@
 import Navbar from "../../Components/Navbar/navbar";
+import Footer from "../../Components/Footer/Footer";
 import React, { useState } from "react";
 import { postJson } from "../lib/api";
 import { useNavigate, Link } from "react-router-dom";
@@ -420,6 +421,7 @@ const navigate = useNavigate();
           </aside>
         </div>
       </div>
+        <Footer />
     </div>
     </>
   );

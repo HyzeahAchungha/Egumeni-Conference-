@@ -32,7 +32,7 @@ export default function Navbar() {
             <Link to="/community" className="hover:underline">
               Communities | Themes
             </Link>
-            <Link to="/partners" className="hover:underline">
+            <Link to="/Partner" className="hover:underline">
               Partners ▾
             </Link>
             <Link to="/explore" className="hover:underline">
