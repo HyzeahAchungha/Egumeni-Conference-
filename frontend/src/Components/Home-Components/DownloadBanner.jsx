@@ -1,5 +1,4 @@
 import React from "react";
-import shine from "../../assets/shine-app.png";
 import { useTranslation } from "react-i18next";
 
 export default function DownloadBanner() {
