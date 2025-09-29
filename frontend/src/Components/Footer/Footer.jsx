@@ -1,6 +1,7 @@
 import React from "react";
 import AU from "../../assets/AU.png";
 import WorldBank from "../../assets/Worldbank.svg";
+import Eager from "../../assets/eager.png";
 import { useTranslation } from "react-i18next";
 export default function Footer() {
    const { t } = useTranslation("common");
@@ -21,10 +22,15 @@ export default function Footer() {
               alt={t("footer.alt.worldBank")}
               className="h-10 sm:h-12 md:h-14 w-auto object-contain bg-white rounded"
             />
+            <img
+              src={Eager}
+              alt={t("footer.alt.eager")}
+              className="h-10 sm:h-12 md:h-14 w-auto object-contain bg-white rounded"
+            />
           </div>
 
           {/* Text */}
-          <div className="text-sm text-gray-700 leading-6 text-center md:text-left">
+          <div className="text-sm text-gray-700 leading-6 text-right md:text-left ml-8">
             <p>{t("footer.rights1", { year })}</p>
             <p>{t("footer.rights2")}</p>
           </div>
