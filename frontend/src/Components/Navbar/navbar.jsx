@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { LANGS } from "../../i18n";
-import EagerLogo from "../../assets/eager-logo.png";
+import EagerLogo from "../../assets/Egumeni logo.png";
 
 export default function Navbar() {
   const [searchOpen, setSearchOpen] = useState(false);

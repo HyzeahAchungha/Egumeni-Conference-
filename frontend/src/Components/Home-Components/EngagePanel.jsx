@@ -1,7 +1,9 @@
 import React from "react";
 import Engage from "../../assets/engage.png";
+import { useTranslation } from "react-i18next";
 
 export default function EngagePanel() {
+  const { t } = useTranslation("common");
   return (
     <div className="mx-auto max-w-[1200px] mt-6">
       <div className="relative overflow-hidden rounded-[10px] border border-black/10 shadow-sm">
@@ -22,9 +24,9 @@ export default function EngagePanel() {
         {/* Content pinned lower */}
         <div className="absolute inset-0 flex items-end">
           <div className="p-6 pb-10 text-white">
-            <h3 className="text-3xl font-extrabold tracking-wide">ENGAGE</h3>
+            <h3 className="text-3xl font-extrabold tracking-wide"> {t("panels.engage.title")}</h3>
             <button className="mt-3 rounded-md bg-[#F39A22] hover:bg-[#F39A22] text-white text-md px-3 py-1.5 shadow">
-              Explore Themes: Policy • Data Systems • Institutional Capacity
+               {t("panels.engage.cta")}
             </button>
           </div>
         </div>

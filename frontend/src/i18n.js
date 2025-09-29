@@ -17,9 +17,63 @@ const resources = {
         language: "Language",
         selectYourLanguage: "Select your language",
       },
+      downloadPanel: {
+        title: "DOWNLOAD",
+        desc: "Key documents for the 1–2 Oct 2025 Egumeni & Coordination Meeting",
+        ctaConcept: "Concept Note (PDF)",
+        ctaAgenda: "Draft Agenda (PDF)",
+        alt: "Illustration of downloadable documents",
+      },
+
+      readPanel: {
+        title: "READ",
+        desc: "Background, Rationale & Methodology for the Egumeni Knowledge Platform",
+        ctaBackground: "Background & Rationale",
+        ctaMethodology: "Methodology / Format",
+        alt: "People reading resources",
+      },
+
+      partnersPanel: {
+        heading: "MEET OUR PARTNERS",
+        visit: "VISIT!",
+        blurb:
+          "Egumeni is convened by the African Union (WGYD, HHSD, AU CIEFFA) with the World Bank and EAGER country teams (Madagascar, Mozambique) to strengthen regional coordination on GEWE and gender-responsive education.",
+        linkAbout: "About Egumeni (Community of Practice)",
+        linkAucPartners: "AUC partners: WGYD • HHSD • AU CIEFFA",
+        linkEagerCountries: "EAGER countries: Madagascar • Mozambique",
+        cta: "SIGN UP FOR MORE HERE!",
+      },
+      participate: {
+        heading: "PARTICIPATE",
+        desc: "In-person Egumeni & Coordination Meeting (Pillar 3 – Enabling Environment / Knowledge Hub): aligning partners on roles, governance and the 2025 roadmap for the Community of Practice.",
+        btnObjectives: "Objectives & Expected Outcomes",
+      },
+      meet: {
+        heading: "MEET",
+        desc: "Join the Egumeni Community of Practice to connect with the AUC, AU CIEFFA, the World Bank, and country teams.",
+        btnJoin: "Join the Community of Practice",
+        btnCoord: "Coordination & Announcements",
+        alt: "Portrait of practitioner",
+      },
+      hero: {
+        title: "Egumeni: EAGER Knowledge Hub",
+        subtitle: "1–2 Oct 2025 • Addis Ababa — Coordination & peer learning.",
+        alt: "Welcome background",
+        login: "Log in",
+        cta: "Not a member yet? Join the community!",
+      },
+      panels: {
+        engage: {
+          title: "ENGAGE",
+          cta: "Explore Themes: Policy • Data Systems • Institutional Capacity",
+        },
+      },
       comingSoon: "Coming Soon",
       backHome: "Back to Home",
-      partner: { subtitle: "We’re crafting this page. Check back shortly.", alt: "Animated woman illustration" },
+      partner: {
+        subtitle: "We’re crafting this page. Check back shortly.",
+        alt: "Animated woman illustration",
+      },
       yes: "Yes",
       no: "No",
       contact: {
@@ -91,7 +145,8 @@ const resources = {
           title: "Sign up",
           welcome: "Welcome to Egumeni Hub!",
           enterInfo: "Please enter the following information:",
-          usernameNote: "it will appear next to your photo when you post a comment",
+          usernameNote:
+            "it will appear next to your photo when you post a comment",
           tagsNote: "you have the option to select multiple tags.",
           jobTitle: "Job Title",
           readMore: "Read more",
@@ -103,7 +158,15 @@ const resources = {
           "Practitioner",
           "Researcher",
         ],
-        countryOptions: ["Cameroon", "Nigeria", "Ghana", "Kenya", "Rwanda", "Morocco", "South Africa"],
+        countryOptions: [
+          "Cameroon",
+          "Nigeria",
+          "Ghana",
+          "Kenya",
+          "Rwanda",
+          "Morocco",
+          "South Africa",
+        ],
       },
     },
     about: {
@@ -147,9 +210,65 @@ const resources = {
         language: "Langue",
         selectYourLanguage: "Choisissez votre langue",
       },
+      downloadPanel: {
+        title: "TÉLÉCHARGER",
+        desc: "Documents clés pour la réunion Egumeni & de coordination des 1–2 oct. 2025",
+        ctaConcept: "Note conceptuelle (PDF)",
+        ctaAgenda: "Projet d’ordre du jour (PDF)",
+        alt: "Illustration de documents à télécharger",
+      },
+
+      readPanel: {
+        title: "LIRE",
+        desc: "Contexte, justification et méthodologie de la plateforme de connaissances Egumeni",
+        ctaBackground: "Contexte et justification",
+        ctaMethodology: "Méthodologie / Format",
+        alt: "Des personnes lisant des ressources",
+      },
+
+      partnersPanel: {
+        heading: "RENCONTREZ NOS PARTENAIRES",
+        visit: "VISITEZ !",
+        blurb:
+          "Egumeni est convoqué par l’Union africaine (WGYD, HHSD, AU CIEFFA) avec la Banque mondiale et les équipes-pays EAGER (Madagascar, Mozambique) afin de renforcer la coordination régionale sur l’égalité de genre et l’éducation sensible au genre.",
+        linkAbout: "À propos d’Egumeni (Communauté de pratique)",
+        linkAucPartners: "Partenaires de l’UA : WGYD • HHSD • AU CIEFFA",
+        linkEagerCountries: "Pays EAGER : Madagascar • Mozambique",
+        cta: "INSCRIVEZ-VOUS ICI POUR EN SAVOIR PLUS !",
+      },
+      participate: {
+        heading: "PARTICIPEZ",
+        desc: "Réunion présentielle Egumeni & Coordination (Pilier 3 – Environnement habilitant / Plateforme de connaissances) : aligner les partenaires sur les rôles, la gouvernance et la feuille de route 2025 de la Communauté de pratique.",
+        btnObjectives: "Objectifs et résultats attendus",
+      },
+
+      meet: {
+        heading: "RENCONTREZ",
+        desc: "Rejoignez la Communauté de pratique Egumeni pour entrer en relation avec l’UA, l’AU CIEFFA, la Banque mondiale et les équipes pays.",
+        btnJoin: "Rejoindre la Communauté de pratique",
+        btnCoord: "Coordination et annonces",
+        alt: "Portrait de praticien·ne",
+      },
+      hero: {
+        title: "Egumeni : Hub de connaissances EAGER",
+        subtitle:
+          "1–2 oct. 2025 • Addis-Abeba — Coordination et apprentissage entre pairs.",
+        alt: "Image d’accueil",
+        login: "Se connecter",
+        cta: "Pas encore membre ? Rejoignez la communauté !",
+      },
+      panels: {
+        engage: {
+          title: "PARTICIPEZ",
+          cta: "Explorer les thèmes : Politiques • Systèmes de données • Capacité institutionnelle",
+        },
+      },
       comingSoon: "Bientôt disponible",
       backHome: "Retour à l’accueil",
-      partner: { subtitle: "Nous préparons cette page. Revenez bientôt.", alt: "Illustration animée d’une femme" },
+      partner: {
+        subtitle: "Nous préparons cette page. Revenez bientôt.",
+        alt: "Illustration animée d’une femme",
+      },
       yes: "Oui",
       no: "Non",
       contact: {
@@ -160,7 +279,8 @@ const resources = {
         lastNamePlaceholder: "Nom",
         emailLabel: "Adresse e-mail",
         emailPlaceholder: "vous@exemple.com",
-        reasonLabel: "Dites-nous la raison pour laquelle vous souhaitez nous contacter",
+        reasonLabel:
+          "Dites-nous la raison pour laquelle vous souhaitez nous contacter",
         reasonPlaceholder: "Saisissez votre message ou raison ici",
         partnerAucCheckbox:
           "Sélectionnez si votre organisation est partenaire AUC (WGYD/HHSD/AU CIEFFA) dans le programme EAGER.",
@@ -172,7 +292,11 @@ const resources = {
         sentError: "Impossible d’envoyer le message. Veuillez réessayer.",
         requiredError: "L’e-mail et la raison sont obligatoires.",
       },
-      validation: { required: "Obligatoire", invalidEmail: "E-mail invalide", passwordTooShort: "Au moins 8 caractères" },
+      validation: {
+        required: "Obligatoire",
+        invalidEmail: "E-mail invalide",
+        passwordTooShort: "Au moins 8 caractères",
+      },
       errors: { error: "Erreur", registrationFailed: "Échec de l’inscription" },
       fields: {
         email: "Adresse e-mail",
@@ -216,7 +340,8 @@ const resources = {
           title: "Inscription",
           welcome: "Bienvenue sur Egumeni Hub !",
           enterInfo: "Veuillez saisir les informations suivantes :",
-          usernameNote: "il apparaîtra à côté de votre photo lorsque vous publierez un commentaire",
+          usernameNote:
+            "il apparaîtra à côté de votre photo lorsque vous publierez un commentaire",
           tagsNote: "vous pouvez sélectionner plusieurs étiquettes.",
           jobTitle: "Intitulé du poste",
           readMore: "En savoir plus",
@@ -228,7 +353,15 @@ const resources = {
           "Praticien·ne",
           "Chercheur·e",
         ],
-        countryOptions: ["Cameroun", "Nigéria", "Ghana", "Kenya", "Rwanda", "Maroc", "Afrique du Sud"],
+        countryOptions: [
+          "Cameroun",
+          "Nigéria",
+          "Ghana",
+          "Kenya",
+          "Rwanda",
+          "Maroc",
+          "Afrique du Sud",
+        ],
       },
     },
     about: {
@@ -272,9 +405,65 @@ const resources = {
         language: "اللغة",
         selectYourLanguage: "اختر لغتك",
       },
+      downloadPanel: {
+        title: "التحميل",
+        desc: "الوثائق الأساسية لاجتماع إيغوميني والتنسيق (1–2 أكتوبر 2025)",
+        ctaConcept: "الورقة المفاهيمية (PDF)",
+        ctaAgenda: "مسودة جدول الأعمال (PDF)",
+        alt: "رسم توضيحي لمستندات قابلة للتنزيل",
+      },
+
+      readPanel: {
+        title: "اقرأ",
+        desc: "الخلفية والمبررات والمنهجية لمنصة المعارف إيغوميني",
+        ctaBackground: "الخلفية والمبررات",
+        ctaMethodology: "المنهجية / الصيغة",
+        alt: "أشخاص يقرؤون الموارد",
+      },
+
+      partnersPanel: {
+        heading: "تعرّف على شركائنا",
+        visit: "زُوروا!",
+        blurb:
+          "يُنظَّم «إيغوميني» برعاية الاتحاد الأفريقي (WGYD وHHSD وAU CIEFFA) وبالشراكة مع مجموعة البنك الدولي وفِرق بلدان برنامج EAGER (مدغشقر، موزمبيق) لتعزيز التنسيق الإقليمي بشأن تمكين المرأة والمساواة بين الجنسين والتعليم المستجيب للنوع الاجتماعي.",
+        linkAbout: "حول إيغوميني (مجتمع الممارسة)",
+        linkAucPartners:
+          "شركاء مفوضية الاتحاد الأفريقي: WGYD • HHSD • AU CIEFFA",
+        linkEagerCountries: "بلدان برنامج EAGER: مدغشقر • موزمبيق",
+        cta: "سجّل هنا للمزيد!",
+      },
+      participate: {
+        heading: "شارِك",
+        desc: "اجتماع «إيغوميني والتنسيق» حضوريًا (الركيزة 3 – البيئة الممكنة / منصة المعرفة): مواءمة الشركاء بشأن الأدوار والحوكمة وخارطة طريق 2025 لمجتمع الممارسة.",
+        btnObjectives: "الأهداف والنتائج المتوقعة",
+      },
+      meet: {
+        heading: "التقِ",
+        desc: "انضم إلى مجتمع Egumeni للممارسة للتواصل مع مفوضية الاتحاد الأفريقي، AU CIEFFA، البنك الدولي، وفِرَق البلدان.",
+        btnJoin: "انضم إلى مجتمع الممارسة",
+        btnCoord: "التنسيق والإعلانات",
+        alt: "صورة لممارس/ة",
+      },
+      hero: {
+        title: "إيغومِني: منصة معارف EAGER",
+        subtitle: "1–2 أكتوبر 2025 • أديس أبابا — تنسيق وتعلّم الأقران.",
+        alt: "خلفية ترحيبية",
+        login: "تسجيل الدخول",
+        cta: "لست عضوًا بعد؟ انضم إلى المجتمع!",
+      },
+
+      panels: {
+        engage: {
+          title: "شارك",
+          cta: "استكشف المحاور: السياسات • نظم البيانات • القدرات المؤسسية",
+        },
+      },
       comingSoon: "قريباً",
       backHome: "العودة إلى الصفحة الرئيسية",
-      partner: { subtitle: "نقوم بإعداد هذه الصفحة. عُد قريبًا.", alt: "رسم متحرك لامرأة" },
+      partner: {
+        subtitle: "نقوم بإعداد هذه الصفحة. عُد قريبًا.",
+        alt: "رسم متحرك لامرأة",
+      },
       yes: "نعم",
       no: "لا",
       contact: {
@@ -287,8 +476,7 @@ const resources = {
         emailPlaceholder: "you@example.com",
         reasonLabel: "أخبرنا سبب رغبتك في التواصل معنا",
         reasonPlaceholder: "اكتب رسالتك أو سبب التواصل هنا",
-        partnerAucCheckbox:
-          "اختر إذا كانت منظمتك شريكًا للاتحاد الأفريقي ...",
+        partnerAucCheckbox: "اختر إذا كانت منظمتك شريكًا للاتحاد الأفريقي ...",
         spotlightCheckbox:
           "اختر إذا كانت منظمتك ضمن برنامج EAGER بدعم من البنك الدولي.",
         submit: "إرسال",
@@ -297,7 +485,11 @@ const resources = {
         sentError: "تعذّر إرسال الرسالة. حاول مرة أخرى.",
         requiredError: "البريد الإلكتروني والسبب مطلوبان.",
       },
-      validation: { required: "مطلوب", invalidEmail: "بريد إلكتروني غير صالح", passwordTooShort: "يجب ألا يقل عن 8 أحرف" },
+      validation: {
+        required: "مطلوب",
+        invalidEmail: "بريد إلكتروني غير صالح",
+        passwordTooShort: "يجب ألا يقل عن 8 أحرف",
+      },
       errors: { error: "خطأ", registrationFailed: "فشل التسجيل" },
       fields: {
         email: "عنوان البريد الإلكتروني",
@@ -343,8 +535,22 @@ const resources = {
           jobTitle: "المسمى الوظيفي",
           readMore: "اقرأ المزيد",
         },
-        affiliationOptions: ["غير منتسب","موظف في منظمة مجتمع مدني","موظف أممي","ممارس/ة","باحث/ة"],
-        countryOptions: ["الكاميرون","نيجيريا","غانا","كينيا","رواندا","المغرب","جنوب أفريقيا"],
+        affiliationOptions: [
+          "غير منتسب",
+          "موظف في منظمة مجتمع مدني",
+          "موظف أممي",
+          "ممارس/ة",
+          "باحث/ة",
+        ],
+        countryOptions: [
+          "الكاميرون",
+          "نيجيريا",
+          "غانا",
+          "كينيا",
+          "رواندا",
+          "المغرب",
+          "جنوب أفريقيا",
+        ],
       },
     },
     about: {
@@ -388,9 +594,63 @@ const resources = {
         language: "Lugha",
         selectYourLanguage: "Chagua lugha yako",
       },
+      downloadPanel: {
+        title: "PAKUA",
+        desc: "Nyaraka muhimu kwa Mkutano wa Egumeni & Uratibu tarehe 1–2 Oktoba 2025",
+        ctaConcept: "Karatasi ya dhana (PDF)",
+        ctaAgenda: "Rasimu ya ajenda (PDF)",
+        alt: "Mchoro wa nyaraka zinazopakuliwa",
+      },
+
+      readPanel: {
+        title: "SOMA",
+        desc: "Historia, sababu na mbinu za Jukwaa la Maarifa la Egumeni",
+        ctaBackground: "Historia na sababu",
+        ctaMethodology: "Mbinu / Muundo",
+        alt: "Watu wakisoma rasilimali",
+      },
+
+      partnersPanel: {
+        heading: "KUTANA NA WASHIRIKA WETU",
+        visit: "TEMBELEA!",
+        blurb:
+          "Egumeni inaandaliwa na Umoja wa Afrika (WGYD, HHSD, AU CIEFFA) kwa ushirikiano na Benki ya Dunia na timu za nchi za EAGER (Madagascar, Msumbiji) ili kuimarisha uratibu wa kikanda kuhusu GEWE na elimu inayozingatia jinsia.",
+        linkAbout: "Kuhusu Egumeni (Jumuiya ya Utendaji)",
+        linkAucPartners: "Washirika wa AUC: WGYD • HHSD • AU CIEFFA",
+        linkEagerCountries: "Nchi za EAGER: Madagascar • Msumbiji",
+        cta: "JISAJILI HAPA KUPATA ZAIDI!",
+      },
+      participate: {
+        heading: "SHIRIKI",
+        desc: "Mkutano wa ana kwa ana wa Egumeni & Uratibu (Nguzo ya 3 – Mazingira Wezeshi / Kituo cha Maarifa): kuoanisha washirika kuhusu majukumu, utawala na ramani ya njia ya 2025 ya Jamii ya Utendaji.",
+        btnObjectives: "Malengo na Matokeo Yanayotarajiwa",
+      },
+      meet: {
+        heading: "KUTANA",
+        desc: "Jiunge na Jamii ya Utendaji ya Egumeni ili kuungana na AUC, AU CIEFFA, Benki ya Dunia na timu za nchi.",
+        btnJoin: "Jiunge na Jamii ya Utendaji",
+        btnCoord: "Uratibu na Taarifa",
+        alt: "Picha ya mtendaji",
+      },
+      hero: {
+        title: "Egumeni: Kituo cha Maarifa cha EAGER",
+        subtitle: "1–2 Okt 2025 • Addis Ababa — Uratibu na ujifunzaji rika.",
+        alt: "Mandhari ya kukaribisha",
+        login: "Ingia",
+        cta: "Si mwanachama bado? Jiunge na jamii!",
+      },
+      panels: {
+        engage: {
+          title: "SHIRIKI",
+          cta: "Gundua Mada: Sera • Mifumo ya Data • Uwezo wa Taasisi",
+        },
+      },
       comingSoon: "Inakuja Hivi Karibuni",
       backHome: "Rudi Nyumbani",
-      partner: { subtitle: "Tunaandaa ukurasa huu. Rudi hivi karibuni.", alt: "Mchoro uliohuishwa wa mwanamke" },
+      partner: {
+        subtitle: "Tunaandaa ukurasa huu. Rudi hivi karibuni.",
+        alt: "Mchoro uliohuishwa wa mwanamke",
+      },
       yes: "Ndiyo",
       no: "Hapana",
       contact: {
@@ -403,8 +663,7 @@ const resources = {
         emailPlaceholder: "wewe@mfano.com",
         reasonLabel: "Tuambie sababu ya kutaka kuwasiliana nasi",
         reasonPlaceholder: "Andika ujumbe wako au sababu hapa",
-        partnerAucCheckbox:
-          "Chagua ikiwa shirika lako ni mshirika wa AUC ...",
+        partnerAucCheckbox: "Chagua ikiwa shirika lako ni mshirika wa AUC ...",
         spotlightCheckbox:
           "Chagua ikiwa shirika lako ni sehemu ya programu ya EAGER ...",
         submit: "Tuma",
@@ -413,8 +672,15 @@ const resources = {
         sentError: "Imeshindikana kutuma ujumbe. Jaribu tena.",
         requiredError: "Barua pepe na sababu zinahitajika.",
       },
-      validation: { required: "Lazima", invalidEmail: "Barua pepe si sahihi", passwordTooShort: "Angalau herufi 8" },
-      errors: { error: "Hitilafu", registrationFailed: "Imeshindikana kujiandikisha" },
+      validation: {
+        required: "Lazima",
+        invalidEmail: "Barua pepe si sahihi",
+        passwordTooShort: "Angalau herufi 8",
+      },
+      errors: {
+        error: "Hitilafu",
+        registrationFailed: "Imeshindikana kujiandikisha",
+      },
       fields: {
         email: "Anwani ya barua pepe",
         username: "Jina la mtumiaji",
@@ -460,8 +726,22 @@ const resources = {
           jobTitle: "Cheo cha kazi",
           readMore: "Soma zaidi",
         },
-        affiliationOptions: ["Hana uhusiano","Mfanyakazi wa Asasi ya Kiraia","Mfanyakazi wa Umoja wa Mataifa","Mtaalamu","Mtafiti"],
-        countryOptions: ["Kamerun","Nigeria","Ghana","Kenya","Rwanda","Morocco","Afrika Kusini"],
+        affiliationOptions: [
+          "Hana uhusiano",
+          "Mfanyakazi wa Asasi ya Kiraia",
+          "Mfanyakazi wa Umoja wa Mataifa",
+          "Mtaalamu",
+          "Mtafiti",
+        ],
+        countryOptions: [
+          "Kamerun",
+          "Nigeria",
+          "Ghana",
+          "Kenya",
+          "Rwanda",
+          "Morocco",
+          "Afrika Kusini",
+        ],
       },
     },
     about: {
