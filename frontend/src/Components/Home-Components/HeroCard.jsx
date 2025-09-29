@@ -12,7 +12,7 @@ export default function HeroCard() {
         <img
           src={hands}
           alt="Welcome background"
-          className="h-[250px] sm:h-[240px] md:h-[280px] w-full object-cover"
+          className="h-[280px] sm:h-[240px] md:h-[280px] w-full object-cover "
         />
         <div className="absolute inset-0 bg-black/35" />
 
@@ -23,7 +23,7 @@ export default function HeroCard() {
             items-center text-center sm:items-start sm:text-left
           "
         >
-          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight drop-shadow ">
+          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight drop-shadow  ">
              {t("hero.title")}
           </h1>
 
