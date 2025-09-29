@@ -2,8 +2,9 @@ import React from "react";
 import Navbar from "../../Components/Navbar/navbar";
 import Footer from "../../Components/Footer/Footer";
 import TwoHands from "../../assets/two-hands.jpg";
-
+import { useTranslation } from "react-i18next";
 export default function AboutUs() {
+  const { t } = useTranslation();
   return (
     <div className="bg-[#f5f6f7] text-gray-800">
       {/* Top nav (yours) */}
@@ -14,10 +15,11 @@ export default function AboutUs() {
         {/* Page label + title */}
         <div className="pt-6 sm:pt-8">
           <p className="text-[11px] font-semibold tracking-[0.18em] text-gray-500">
-            PAGE
+            {t("about:pageLabel")}
           </p>
           <h1 className="mt-1 text-[28px] sm:text-[32px] font-semibold tracking-tight">
-            About us
+            {t("about:title")}
+
           </h1>
         </div>
 
@@ -27,7 +29,7 @@ export default function AboutUs() {
           <div className="aspect-[16/6] sm:aspect-[16/5]">
             <img
               src={TwoHands}
-              alt="About us banner"
+              alt={t("about:heroAlt")}
               className="h-full w-full object-cover"
             />
           </div>
@@ -41,7 +43,7 @@ export default function AboutUs() {
 
         {/* Share row (right aligned) */}
         <div className="mt-4 flex items-center justify-end gap-3 text-sm text-gray-600">
-          <span className="hidden sm:inline">Share this page</span>
+          <span className="hidden sm:inline">{t("about:shareThisPage")}</span>
           {/* X icon */}
           <a
             href="#"
@@ -68,18 +70,15 @@ export default function AboutUs() {
         <main className="mt-5 rounded-xl border border-black/10 bg-white p-6 shadow-sm sm:p-7">
           <div className="prose prose-sm max-w-none text-[15px] leading-7 prose-a:text-[#1a56db] prose-a:no-underline hover:prose-a:underline">
             <p className="mb-4">
-              Egumeni Hub is convened by the African Union, with support from the World Bank through the EAGER programme, to strengthen regional coordination and dialogue among governments, civil society, development partners, practitioners,
-              and researchers working to advance gender-responsive education and women’s empowerment across Africa.
+              {t("about:p1")}
             </p>
 
             <p className="mb-4">
-              EAGER (East Africa Girls’ Empowerment and Resilience) is a World Bank–supported regional programme that advances girls’ and young women’s education and economic empowerment across East Africa. Phase one is implemented by the Republic of Madagascar and the Republic of Mozambique, with the African Union Commission—through the Women, Gender and Youth Directorate (WGYD) in collaboration with the Health, Humanitarian and Social Affairs Directorate (HHSD) and AU CIEFFA—providing regional coordination. The programme aligns with Agenda 2063, Aspiration 6 and the Second Ten-Year Implementation Plan (Moonshot 6) to ensure development that is people-driven, especially by women and youth.
-
-              To optimise design and implementation, EAGER is operationalising the Egumeni Knowledge Platform—a regional Community of Practice (CoP) named from the Siswati word for “a gathering space.” Egumeni convenes programme implementers and partners working on gender-responsive education and GEWE to connect, exchange evidence and lessons, and strengthen institutional capacity across countries.
+              {t("about:p2")}
             </p>
 
             <p>
-              The Egumeni & Coordination Meeting (1–2 Oct 2025, Addis Ababa, Ethiopia) will align partners on roles, governance and working modalities; validate the 2025 roadmap and workplan; and agree on communication, monitoring and coordination structures. Expected outcomes include a final Egumeni Framework, thematic outputs on policy, data systems and institutional capacity, as well as strengthened partnerships among AUC departments, the World Bank and EAGER country actors.
+              {t("about:p3")}
             </p>
           </div>
         </main>

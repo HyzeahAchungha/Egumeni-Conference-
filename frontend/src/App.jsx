@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <div>
-
+        
         <Routes>
           {/* redirect root to /register */}
          <Route path="/" element={<Home />} />

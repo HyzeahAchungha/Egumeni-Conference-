@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import Navbar from "../../Components/Navbar/navbar";
 import Footer from "../../Components/Footer/Footer";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 function ContactForm() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -75,19 +77,19 @@ function ContactForm() {
 
       <main className="flex-grow">
         <div className="max-w-2xl px-6 py-10 bg-white shadow-sm rounded-md ml-12">
-          <h2 className="text-2xl font-semibold mb-6">Contact Us</h2>
+          <h2 className="text-2xl font-semibold mb-6">{t("contact.title")}</h2>
 
           <form onSubmit={handleSubmit} className="space-y-5" noValidate>
             {/* First Name */}
             <div>
               <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
-                First name
+                 {t("contact.firstNameLabel")}
               </label>
               <input
                 type="text"
                 id="firstName"
                 name="firstName"
-                placeholder="First name"
+                placeholder={t("contact.firstNamePlaceholder")}
                 value={formData.firstName}
                 onChange={handleChange}
                 className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-[#ff7c3b] focus:outline-none"
@@ -97,12 +99,13 @@ function ContactForm() {
             {/* Last Name */}
             <div>
               <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
-                Last name
+                {t("contact.lastNameLabel")}
               </label>
               <input
                 type="text"
                 id="lastName"
                 name="lastName"
+                  placeholder={t("contact.lastNamePlaceholder")}
                 value={formData.lastName}
                 onChange={handleChange}
                 className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-[#ff7c3b] focus:outline-none"
@@ -112,12 +115,13 @@ function ContactForm() {
             {/* Email */}
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                Email address <span className="text-red-500">*</span>
+               {t("contact.emailLabel")} <span className="text-red-500">*</span>
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
+                placeholder={t("contact.emailPlaceholder")}
                 required
                 value={formData.email}
                 onChange={handleChange}
@@ -128,12 +132,13 @@ function ContactForm() {
             {/* Reason */}
             <div>
               <label htmlFor="reason" className="block text-sm font-medium text-gray-700 mb-1">
-                Tell us the reason why you would like to contact us <span className="text-red-500">*</span>
+                {t("contact.reasonLabel")}  <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
                 id="reason"
                 name="reason"
+                placeholder={t("contact.reasonPlaceholder")}
                 required
                 value={formData.reason}
                 onChange={handleChange}
@@ -151,7 +156,7 @@ function ContactForm() {
                   onChange={handleChange}
                   className="mr-2 mt-1"
                 />
-             Select if your organization is an AUC (WGYD/HHSD/AU CIEFFA) partner in the EAGER programme.
+             {t("contact.partnerAucCheckbox")}
               </label>
 
               <label className="flex items-start text-sm text-gray-700">
@@ -162,7 +167,7 @@ function ContactForm() {
                   onChange={handleChange}
                   className="mr-2 mt-1"
                 />
-               Select if your organization is part of the World Bank–supported EAGER programme.
+               {t("contact.spotlightCheckbox")}
               </label>
             </div>
 
@@ -173,7 +178,7 @@ function ContactForm() {
               className="bg-[#F39A22] hover:bg-[#F39A22] disabled:opacity-60 text-white px-5 py-2 rounded-md text-sm font-medium transition"
               aria-busy={status.loading}
             >
-              {status.loading ? "Sending..." : "Submit"}
+             {status.loading ? t("contact.sending") : t("contact.submit")}
             </button>
 
             {status.msg && (
