@@ -42,7 +42,7 @@ export default function Login() {
     setServerError("");
     try {
       await postJson("/api/auth/login", { identifier, password });
-      navigate("/", { replace: true });
+      navigate("/home", { replace: true });
     } catch (err) {
       setServerError(err.message || "Login failed");
     } finally {
@@ -67,7 +67,7 @@ export default function Login() {
 
          
           <form onSubmit={onSubmit} className="p-6 space-y-5 max-w-lg">
-            <p className="text-gray-700">Welcome back to SHINE!</p>
+            <p className="text-gray-700">Welcome back to Egumeni Hub!</p>
 
             {serverError && <ErrorBanner>{serverError}</ErrorBanner>}
 

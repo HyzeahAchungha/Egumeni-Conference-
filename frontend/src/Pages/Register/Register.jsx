@@ -143,7 +143,7 @@ const navigate = useNavigate();
     try {
       const data = await postJson("/api/auth/signup", payload);
       alert("Registered successfully!");
-     navigate("/", { replace: true }); // go home on success
+     navigate("/home", { replace: true }); // go home on success
     } catch (err) {
       setServerError(err.message || "Registration failed");
       setServerFieldErrors(err.fieldErrors || {});
@@ -177,7 +177,7 @@ const navigate = useNavigate();
 
               <form onSubmit={handleSubmit} className="p-6 space-y-6 max-w-xl text-left">
                 <p className="text-gray-700 max-w-xl">
-                  Welcome to SHINE! A welcome message with further instructions will be sent to your email address after you
+                  Welcome to  Egumeni Hub! A welcome message with further instructions will be sent to your email address after you
                   successfully enter your email address and a username. Didn't receive the email? Make sure to check your spam or
                   junk folders or contact us at untf-evaw@unwomen.org
                 </p>
@@ -399,7 +399,7 @@ const navigate = useNavigate();
                 <h2 className="text-xl font-semibold text-white">Sign up</h2>
               </div>
               <div className="p-6 text-gray-700 leading-7">
-                <p className="mb-4">Welcome to SHINE!</p>
+                <p className="mb-4">Welcome to Egumeni Hub!</p>
                 <p className="mb-4">Please enter the following information:</p>
                 <ul className="list-disc ml-5 space-y-2">
                   <li><strong>Email Address</strong></li>

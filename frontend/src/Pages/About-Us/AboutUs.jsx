@@ -68,12 +68,8 @@ export default function AboutUs() {
         <main className="mt-5 rounded-xl border border-black/10 bg-white p-6 shadow-sm sm:p-7">
           <div className="prose prose-sm max-w-none text-[15px] leading-7 prose-a:text-[#1a56db] prose-a:no-underline hover:prose-a:underline">
             <p className="mb-4">
-              SHINE Hub is produced by the UN Trust Fund to End Violence
-              against Women in collaboration with the Spotlight Initiative to
-              enable and facilitate dialogue among civil society organizations,
-              the United Nations, practitioners, academics and researchers, the
-              private sector, donors, and other partners working to end
-              violence against women.
+             Egumeni Hub is convened by the African Union, with support from the World Bank through the EAGER programme, to strengthen regional coordination and dialogue among governments, civil society, development partners, practitioners, 
+             and researchers working to advance gender-responsive education and women’s empowerment across Africa.
             </p>
 
             <p className="mb-4">
