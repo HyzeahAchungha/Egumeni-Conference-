@@ -10,6 +10,7 @@ import Communities from './Pages/Communities/Communities';
 import Partner from './Pages/Partner/Partner';
 import Explore from './Pages/Explore/Explore';
 import PrivacyPolicy from './Pages/Privacy-Policy/Policy';
+import Gallery from './Pages/Gallery/Gallery'
 
 function App() {
 
@@ -17,19 +18,20 @@ function App() {
   return (
     <>
       <div>
-        
+
         <Routes>
           {/* redirect root to /register */}
-         <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/register" element={<RegistrationForm />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/home" element={<Home />} />
           <Route path="/contact-form" element={<ContactForm />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/community" element={<Communities />} />
-           <Route path="/Partner" element={<Partner />} /> 
-           <Route path="/explore" element={<Explore />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+          <Route path="/Partner" element={<Partner />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/gallery" element={<Gallery />} />
 
         </Routes>
 

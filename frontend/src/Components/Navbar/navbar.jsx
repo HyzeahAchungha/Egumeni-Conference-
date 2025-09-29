@@ -53,12 +53,16 @@ export default function Navbar() {
             <Link to="/explore" className="hover:underline">
               {t("nav.explore")} ▾
             </Link>
+            <Link to="/gallery" className="hover:underline">
+              {t("nav.gallery")}
+            </Link>
             <Link to="/about-us" className="hover:underline">
               {t("nav.about")} ▾
             </Link>
             <Link to="/contact-form" className="hover:underline">
               {t("nav.contact")}
             </Link>
+            
 
             {/* Search icon */}
             {/* <button

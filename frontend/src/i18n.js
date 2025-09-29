@@ -10,6 +10,7 @@ const resources = {
         communities: "Communities | Themes",
         partner: "Partners",
         explore: "Explore",
+        gallery: "Gallery",
         about: "About Us",
         contact: "Contact Us",
         signup: "Sign up",
