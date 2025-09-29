@@ -15,7 +15,7 @@ import Workshop2 from "../../assets/Workshop/FK6A0003.jpg"
 import Workshop3 from "../../assets/Workshop/FK6A0005.jpg"
 import Workshop4 from "../../assets/Workshop/FK6A0006.jpg"
 import Workshop5 from "../../assets/Workshop/FK6A0007.jpg"
-
+import { useTranslation } from "react-i18next";
 
 // Your raw items can keep any labels; we'll normalize to just 2 categories.
 const IMAGES = [
@@ -46,7 +46,8 @@ const normalizeCategory = (item) => {
 
 export default function Gallery() {
     const [filter, setFilter] = useState("All");
-    const [activeIndex, setActiveIndex] = useState(-1); // -1 = closed
+    const [activeIndex, setActiveIndex] = useState(-1);
+      const { t } = useTranslation("common"); // -1 = closed
 
     // Build a normalized list with only the 2 categories
     const ITEMS = useMemo(
@@ -84,24 +85,26 @@ export default function Gallery() {
 
             <main className="mx-auto max-w-[1200px] px-4 sm:px-6 md:px-8 py-8">
                 <div className="flex items-center justify-between gap-3">
-                    <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">Gallery</h1>
+                    <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">{t("gallery.title")}</h1>
                 </div>
 
                 {/* Filters: only Workshops / Speakers (+ All) */}
                 <div className="mt-6 flex flex-wrap gap-2">
-                    {CATEGORIES.map((cat) => (
+                    {CATEGORIES.map((key) => (
                         <button
-                            key={cat}
-                            onClick={() => setFilter(cat)}
+                            key={key}
+                            onClick={() => setFilter(key)}
                             className={[
                                 "rounded-full px-4 py-1.5 text-sm border shadow-sm",
-                                filter === cat
+                                filter === key
                                     ? "bg-[#2A2E6E] text-white border-transparent"
                                     : "bg-white text-gray-800 border-gray-200 hover:bg-gray-50",
                             ].join(" ")}
-                            aria-pressed={filter === cat}
+                            aria-pressed={filter === key}
                         >
-                            {cat}
+                        {t(`gallery.filters.${key}`, { defaultValue: key })}
+
+
                         </button>
                     ))}
                 </div>

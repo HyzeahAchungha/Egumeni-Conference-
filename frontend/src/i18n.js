@@ -18,6 +18,14 @@ const resources = {
         language: "Language",
         selectYourLanguage: "Select your language",
       },
+      gallery: {
+  title: "Gallery",
+  filters: {
+    All: "All",
+    Workshop: "Workshop",
+    Speaker: "Speaker",
+  },
+},
       footer: {
         rights1:
           "©{{year}} African Union Commission (WGYD, HHSD) & AU CIEFFA. All rights reserved.",
@@ -218,6 +226,15 @@ const resources = {
         language: "Langue",
         selectYourLanguage: "Choisissez votre langue",
       },
+      gallery: {
+  title: "Galerie",
+  filters: {
+    All: "Tout",
+    Workshop: "Atelier",
+    Speaker: "Intervenant·e",
+  },
+},
+
       footer: {
         rights1:
           "©{{year}} Commission de l’Union africaine (WGYD, HHSD) & AU CIEFFA. Tous droits réservés.",
@@ -420,6 +437,14 @@ const resources = {
         language: "اللغة",
         selectYourLanguage: "اختر لغتك",
       },
+      gallery: {
+  title: "المعرض",
+  filters: {
+    All: "الكل",
+    Workshop: "ورشة عمل",
+    Speaker: "متحدث/ة",
+  },
+},
       footer: {
         rights1:
           "©{{year}} مفوضية الاتحاد الأفريقي (WGYD, HHSD) وAU CIEFFA. جميع الحقوق محفوظة.",
@@ -615,6 +640,14 @@ const resources = {
         language: "Lugha",
         selectYourLanguage: "Chagua lugha yako",
       },
+      gallery: {
+  title: "Matunzio",
+  filters: {
+    All: "Zote",
+    Workshop: "Warsha",
+    Speaker: "Mzungumzaji",
+  },
+},
       footer: {
         rights1:
           "©{{year}} Tume ya Umoja wa Afrika (WGYD, HHSD) & AU CIEFFA. Haki zote zimehifadhiwa.",
