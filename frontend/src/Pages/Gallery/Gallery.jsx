@@ -3,7 +3,7 @@ import React, { useMemo, useState, useEffect, useCallback } from "react";
 import Navbar from "../../Components/Navbar/navbar";
 import Footer from "../../Components/Footer/Footer";
 
-// TODO: Replace these with your real images (local /assets or URLs)
+// Your raw items can keep any labels; we'll normalize to just 2 categories.
 const IMAGES = [
   { id: 1, src: "/assets/gallery/egumeni-001.jpg", alt: "Plenary session", caption: "Plenary session", category: "Plenary" },
   { id: 2, src: "/assets/gallery/egumeni-002.jpg", alt: "Breakout workshop", caption: "Breakout workshop", category: "Workshops" },
@@ -13,23 +13,38 @@ const IMAGES = [
   { id: 6, src: "/assets/gallery/egumeni-006.jpg", alt: "Team planning", caption: "Team planning", category: "Workshops" },
 ];
 
-const CATEGORIES = ["All", ...Array.from(new Set(IMAGES.map(i => i.category)))];
+// 🔽 Force only 2 categories
+const CATEGORIES = ["All", "Workshops", "Speakers"];
+
+// Normalize: if original category/caption includes "workshop", map to Workshops; else Speakers
+const normalizeCategory = (item) => {
+  const text = `${item.category ?? ""} ${item.caption ?? ""}`.toLowerCase();
+  return text.includes("workshop") ? "Workshops" : "Speakers";
+};
 
 export default function Gallery() {
   const [filter, setFilter] = useState("All");
   const [activeIndex, setActiveIndex] = useState(-1); // -1 = closed
 
+  // Build a normalized list with only the 2 categories
+  const ITEMS = useMemo(
+    () => IMAGES.map((i) => ({ ...i, category: normalizeCategory(i) })),
+    []
+  );
+
   const filtered = useMemo(
-    () => (filter === "All" ? IMAGES : IMAGES.filter(i => i.category === filter)),
-    [filter]
+    () => (filter === "All" ? ITEMS : ITEMS.filter((i) => i.category === filter)),
+    [filter, ITEMS]
   );
 
   const openLightbox = (index) => setActiveIndex(index);
   const closeLightbox = () => setActiveIndex(-1);
-  const goPrev = useCallback(() => setActiveIndex(i => (i > 0 ? i - 1 : i)), []);
-  const goNext = useCallback(() => setActiveIndex(i => (i < filtered.length - 1 ? i + 1 : i)), [filtered.length]);
+  const goPrev = useCallback(() => setActiveIndex((i) => (i > 0 ? i - 1 : i)), []);
+  const goNext = useCallback(
+    () => setActiveIndex((i) => (i < filtered.length - 1 ? i + 1 : i)),
+    [filtered.length]
+  );
 
-  // Keyboard nav for lightbox
   useEffect(() => {
     if (activeIndex < 0) return;
     const onKey = (e) => {
@@ -46,13 +61,11 @@ export default function Gallery() {
       <Navbar />
 
       <main className="mx-auto max-w-[1200px] px-4 sm:px-6 md:px-8 py-8">
-        {/* Header */}
         <div className="flex items-center justify-between gap-3">
           <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">Gallery</h1>
-          
         </div>
 
-        {/* Filters */}
+        {/* Filters: only Workshops / Speakers (+ All) */}
         <div className="mt-6 flex flex-wrap gap-2">
           {CATEGORIES.map((cat) => (
             <button
@@ -93,7 +106,7 @@ export default function Gallery() {
                   className="h-40 sm:h-44 md:h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <figcaption className="absolute bottom-0 left-0 right-0 bg-black/45 text-white text-xs sm:text-sm px-2 py-1.5">
-                  {img.caption}
+                  {img.caption} <span className="opacity-80">• {img.category}</span>
                 </figcaption>
               </button>
             </figure>
@@ -170,7 +183,7 @@ function Lightbox({ items, index, onClose, onPrev, onNext }) {
           className="max-h-[75vh] max-w-full object-contain rounded-md shadow-2xl"
         />
         <figcaption className="mt-3 text-center text-white/90 text-sm">
-          {item.caption} {item.category ? <span className="opacity-70">• {item.category}</span> : null}
+          {item.caption} <span className="opacity-70">• {item.category}</span>
         </figcaption>
       </figure>
     </div>
