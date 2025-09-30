@@ -14,9 +14,7 @@ export default function AboutUs() {
       <div className="mx-auto w-full max-w-[1160px] px-4 sm:px-6">
         {/* Page label + title */}
         <div className="pt-6 sm:pt-8">
-          <p className="text-[11px] font-semibold tracking-[0.18em] text-gray-500">
-            {t("about:pageLabel")}
-          </p>
+         
           <h1 className="mt-1 text-[28px] sm:text-[32px] font-semibold tracking-tight">
             {t("about:title")}
 

@@ -186,15 +186,14 @@ const resources = {
       },
     },
     about: {
-      pageLabel: "PAGE",
       title: "About us",
       heroAlt: "About us banner",
       shareThisPage: "Share this page",
       shareOnX: "Share on X",
       shareOnFacebook: "Share on Facebook",
-      p1: "Egumeni Hub is convened by the African Union...",
-      p2: "EAGER (East Africa Girls’ Empowerment and Resilience) is...",
-      p3: "The Egumeni & Coordination Meeting (1–2 Oct 2025, Addis Ababa, Ethiopia)...",
+      p1: "EAGER (East Africa Girls’ Empowerment and Resilience) is a World Bank–supported regional programme that advances girls’ and young women’s education and economic empowerment across East Africa. Phase one is implemented by the Republic of Madagascar and the Republic of Mozambique, with the African Union Commission—through the Women, Gender and Youth Directorate (WGYD) in collaboration with the Health, Humanitarian and Social Affairs Directorate (HHSD) and AU CIEFFA—providing regional coordination. The programme aligns with Agenda 2063, Aspiration 6 and the Second Ten-Year Implementation Plan (Moonshot 6) to ensure development that is people-driven, especially by women and youth.",
+      p2: "To optimise design and implementation, EAGER is operationalising the Egumeni Knowledge Platform—a regional Community of Practice (CoP) named from the Siswati word for “a gathering space.” Egumeni convenes programme implementers and partners working on gender-responsive education and GEWE to connect, exchange evidence and lessons, and strengthen institutional capacity across countries.",
+      p3: "The Egumeni & Coordination Meeting (1–2 Oct 2025, Addis Ababa, Ethiopia) will align partners on roles, governance and working modalities; validate the 2025 roadmap and workplan; and agree on communication, monitoring and coordination structures. Expected outcomes include a final Egumeni Framework, thematic outputs on policy, data systems and institutional capacity, as well as strengthened partnerships among AUC departments, the World Bank and EAGER country actors.",
     },
     auth: {
       fields: { password: "Password" },
@@ -397,17 +396,17 @@ const resources = {
         ],
       },
     },
+
     about: {
-      pageLabel: "PAGE",
-      title: "À propos",
-      heroAlt: "Bannière À propos",
-      shareThisPage: "Partager cette page",
-      shareOnX: "Partager sur X",
-      shareOnFacebook: "Partager sur Facebook",
-      p1: "Le Hub Egumeni est convoqué par l’Union africaine...",
-      p2: "EAGER ...",
-      p3: "La réunion de coordination Egumeni ...",
-    },
+  title: "À propos de nous",
+  heroAlt: "Bannière À propos de nous",
+  shareThisPage: "Partager cette page",
+  shareOnX: "Partager sur X",
+  shareOnFacebook: "Partager sur Facebook",
+  p1: "EAGER (East Africa Girls’ Empowerment and Resilience) est un programme régional soutenu par la Banque mondiale qui fait progresser l’éducation et l’autonomisation économique des filles et des jeunes femmes en Afrique de l’Est. La phase 1 est mise en œuvre par la République de Madagascar et la République du Mozambique, la Commission de l’Union africaine — via la Direction des femmes, du genre et de la jeunesse (WGYD) en collaboration avec la Direction de la santé, de l’action humanitaire et des affaires sociales (HHSD) et l’AU CIEFFA — assurant la coordination régionale. Le programme s’aligne sur l’Agenda 2063, l’Aspiration 6 et le Deuxième Plan décennal de mise en œuvre (Moonshot 6) afin de garantir un développement porté par les populations, en particulier les femmes et les jeunes.",
+  p2: "Pour optimiser la conception et la mise en œuvre, EAGER opérationnalise la Plateforme de connaissances Egumeni — une Communauté de pratique (CoP) régionale dont le nom vient du siswati et signifie « un espace de rassemblement ». Egumeni réunit les responsables de programme et les partenaires œuvrant pour une éducation sensible au genre et l’égalité de genre (GEWE) afin de se connecter, d’échanger des données probantes et des enseignements, et de renforcer les capacités institutionnelles entre pays.",
+  p3: "La réunion Egumeni & Coordination (1–2 oct. 2025, Addis-Abeba, Éthiopie) visera à aligner les partenaires sur les rôles, la gouvernance et les modalités de travail ; à valider la feuille de route et le plan de travail 2025 ; et à convenir des structures de communication, de suivi et de coordination. Les résultats attendus incluent un Cadre Egumeni final, des livrables thématiques sur les politiques, les systèmes de données et le renforcement des capacités institutionnelles, ainsi qu’un partenariat renforcé entre les départements de l’AUC, la Banque mondiale et les acteurs des pays EAGER."
+},
     auth: {
       fields: { password: "Mot de passe" },
       login: {
@@ -602,16 +601,16 @@ const resources = {
       },
     },
     about: {
-      pageLabel: "الصفحة",
-      title: "من نحن",
-      heroAlt: "لافتة صفحة من نحن",
-      shareThisPage: "شارك هذه الصفحة",
-      shareOnX: "المشاركة على X",
-      shareOnFacebook: "المشاركة على فيسبوك",
-      p1: "يُنظَّم مركز إيغوميني ...",
-      p2: "برنامج EAGER ...",
-      p3: "ستعمل «اجتماعات إيغوميني ...",
-    },
+  title: "من نحن",
+  heroAlt: "لافتة صفحة من نحن",
+  shareThisPage: "شارك هذه الصفحة",
+  shareOnX: "المشاركة على X",
+  shareOnFacebook: "المشاركة على فيسبوك",
+  p1: "يُعد برنامج EAGER (تمكين وصمود الفتيات في شرق أفريقيا) برنامجًا إقليميًا تدعمه مجموعة البنك الدولي ويعزّز تعليم الفتيات والشابات وتمكينهنّ الاقتصادي في شرق أفريقيا. تُنفَّذ المرحلة الأولى بواسطة جمهورية مدغشقر وجمهورية موزمبيق، مع قيام مفوضية الاتحاد الأفريقي — عبر مديرية المرأة والنوع الاجتماعي والشباب (WGYD) وبالتعاون مع مديرية الصحة والعمل الإنساني والشؤون الاجتماعية (HHSD) وAU CIEFFA — بتقديم التنسيق الإقليمي. ويتماشى البرنامج مع أجندة 2063، الطموح السادس، وخطة التنفيذ للعشرية الثانية (Moonshot 6) لضمان تنمية يقودها الناس، ولا سيما النساء والشباب.",
+  p2: "ولتحسين التصميم والتنفيذ، يعمل برنامج EAGER على تفعيل «منصة المعارف إيغوميني» — وهي مجتمع ممارسة (CoP) إقليمي اشتُق اسمها من كلمة في لغة السيسواتي تعني «مكان الالتقاء». تجمع «إيغوميني» منفّذي البرامج والشركاء العاملين على التعليم المستجيب للنوع الاجتماعي وتمكين المرأة والمساواة بين الجنسين لتبادل التواصل والأدلة والدروس وتعزيز القدرات المؤسسية عبر البلدان.",
+  p3: "سيعمل «اجتماع إيغوميني والتنسيق» (1–2 أكتوبر 2025، أديس أبابا، إثيوبيا) على مواءمة الشركاء بشأن الأدوار والحوكمة وطرائق العمل؛ واعتماد خارطة الطريق وخطة العمل لعام 2025؛ والاتفاق على هياكل الاتصال والمتابعة والتنسيق. وتشمل النتائج المتوقعة «إطار إيغوميني» النهائي، ومخرجات موضوعية حول السياسات وأنظمة البيانات وبناء القدرات المؤسسية، إلى جانب شراكات أقوى بين دوائر مفوضية الاتحاد الأفريقي والبنك الدولي والجهات الفاعلة في بلدان برنامج EAGER."
+},
+
     auth: {
       fields: { password: "كلمة المرور" },
       login: {
@@ -808,16 +807,16 @@ const resources = {
       },
     },
     about: {
-      pageLabel: "UKURASA",
-      title: "Kuhusu sisi",
-      heroAlt: "Bango la ukurasa Kuhusu sisi",
-      shareThisPage: "Shiriki ukurasa huu",
-      shareOnX: "Shiriki kwenye X",
-      shareOnFacebook: "Shiriki kwenye Facebook",
-      p1: "Egumeni Hub inaandaliwa na Umoja wa Afrika...",
-      p2: "EAGER ni mpango wa kikanda ...",
-      p3: "Mkutano wa Egumeni & Uratibu ...",
-    },
+  title: "Kuhusu Sisi",
+  heroAlt: "Bango la ukurasa Kuhusu Sisi",
+  shareThisPage: "Shiriki ukurasa huu",
+  shareOnX: "Shiriki kwenye X",
+  shareOnFacebook: "Shiriki kwenye Facebook",
+  p1: "EAGER (East Africa Girls’ Empowerment and Resilience) ni programu ya kikanda inayoungwa mkono na Benki ya Dunia inayokuza elimu na uwezeshaji wa kiuchumi wa wasichana na wanawake vijana barani Afrika Mashariki. Awamu ya kwanza inatekelezwa na Jamhuri ya Madagascar na Jamhuri ya Msumbiji, huku Tume ya Umoja wa Afrika — kupitia Kurugenzi ya Wanawake, Jinsia na Vijana (WGYD) ikishirikiana na Kurugenzi ya Afya, Misaada ya Kibinadamu na Masuala ya Kijamii (HHSD) na AU CIEFFA — ikitoa uratibu wa kikanda. Programu inaendana na Ajenda 2063, Dira ya 6, na Mpango wa Pili wa Utekelezaji wa Miaka Kumi (Moonshot 6) ili kuhakikisha maendeleo yanayoongozwa na watu, hasa wanawake na vijana.",
+  p2: "Ili kuboresha usanifu na utekelezaji, EAGER inaendesha Jukwaa la Maarifa la Egumeni — Jumuiya ya Utendaji (CoP) ya kikanda lenye jina lililotokana na neno la Kiswati linalomaanisha “eneo la kukusanyikia”. Egumeni huwakutanisha watekelezaji wa programu na washirika wanaofanya kazi kwenye elimu inayozingatia jinsia na GEWE ili kuungana, kubadilishana ushahidi na masomo, na kuimarisha uwezo wa taasisi kati ya nchi.",
+  p3: "Mkutano wa Egumeni & Uratibu (1–2 Oktoba 2025, Addis Ababa, Ethiopia) utaoanisha washirika kuhusu majukumu, utawala na taratibu za kazi; kuthibitisha ramani ya njia na mpango-kazi wa 2025; na kukubaliana kuhusu miundo ya mawasiliano, ufuatiliaji na uratibu. Matokeo yanayotarajiwa ni pamoja na Muundo wa Egumeni wa mwisho, mazao ya mada kuhusu sera, mifumo ya data na uwezo wa taasisi, pamoja na ushirikiano ulioboreshwa kati ya idara za AUC, Benki ya Dunia na wadau wa nchi za EAGER."
+}
+,
     auth: {
       fields: { password: "Nenosiri" },
       login: {
