@@ -8,7 +8,7 @@ import ContactForm from "./Pages/Contact-Us/ContactForm";
 import AboutUs from "./Pages/About-Us/AboutUs";
 import Communities from './Pages/Communities/Communities';
 import Partner from './Pages/Partner/Partner';
-import Explore from './Pages/Explore/Explore';
+import Courses from './Pages/Courses/Courses'
 import PrivacyPolicy from './Pages/Privacy-Policy/Policy';
 import Gallery from './Pages/Gallery/Gallery'
 
@@ -29,7 +29,7 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/community" element={<Communities />} />
           <Route path="/Partner" element={<Partner />} />
-          <Route path="/explore" element={<Explore />} />
+          <Route path="/courses" element={<Courses />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/gallery" element={<Gallery />} />
 

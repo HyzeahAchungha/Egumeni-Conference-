@@ -9,7 +9,7 @@ const resources = {
       nav: {
         communities: "Communities | Themes",
         partner: "Partners",
-        explore: "Explore",
+        courses: "Courses",
         gallery: "Gallery",
         about: "About Us",
         contact: "Contact Us",

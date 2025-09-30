@@ -50,8 +50,8 @@ export default function Navbar() {
             <Link to="/partner" className="hover:underline">
               {t("nav.partner")} ▾
             </Link>
-            <Link to="/explore" className="hover:underline">
-              {t("nav.explore")} ▾
+            <Link to="/courses" className="hover:underline">
+              {t("nav.courses")} ▾
             </Link>
             <Link to="/gallery" className="hover:underline">
               {t("nav.gallery")}
@@ -147,10 +147,10 @@ export default function Navbar() {
                 {t("nav.communities")}
               </Link>
               <Link onClick={() => setMobileOpen(false)} to="/partners" className="rounded-md px-2 py-2 hover:bg-gray-50">
-                {t("nav.partners")}
+                {t("nav.partner")}
               </Link>
-              <Link onClick={() => setMobileOpen(false)} to="/explore" className="rounded-md px-2 py-2 hover:bg-gray-50">
-                {t("nav.explore")}
+              <Link onClick={() => setMobileOpen(false)} to="/courses" className="rounded-md px-2 py-2 hover:bg-gray-50">
+                {t("nav.courses")}
               </Link>
               <Link onClick={() => setMobileOpen(false)} to="/about-us" className="rounded-md px-2 py-2 hover:bg-gray-50">
                 {t("nav.about")}
